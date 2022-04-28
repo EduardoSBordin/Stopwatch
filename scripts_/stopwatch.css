@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body{
+    background-color: rgb(35, 35, 35);
+}
+h1{
+    color: white;
+    font-size: 80pt;
+    font-family: Quicksand;
+    letter-spacing: 20px;
+    text-align: center;
+}
+button{
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    justify-content: space-between;
+    margin: 20px;
+    transition: 0.5s;
+}
+#pause:focus{
+    transform: scale(1.3);
+}
+#start:hover{
+    background-color: green;
+    color: white;
+}
+
+i{
+    font-size: 30pt;
+}
+.container{
+    background-color: rgba(250, 235, 215, 0);
+    max-width: 100%;
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+.divCounter{
+    background-color: rgba(255, 0, 0, 0);
+    text-align: center;
+    width: 100%;
+}
+.divBtns{
+    background-color: rgba(255, 255, 0, 0);
+    text-align: center;
+    width: 100%;
+}
