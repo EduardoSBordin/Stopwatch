@@ -15,21 +15,32 @@ button{
     height: 80px;
     border: none;
     border-radius: 50%;
-    background-color: white;
     padding: 20px;
-    color: black;
+    color: rgb(244, 244, 244);
     justify-content: space-between;
     margin: 20px;
     transition: 0.5s;
 }
-#pause:focus{
-    transform: scale(1.3);
+#pause , #stop{
+    border-radius: 50px;
+background: linear-gradient(145deg, #1e1e1e, #232323);
+box-shadow:  20px 20px 60px #1c1c1c,
+             -20px -20px 60px #262626;
 }
-#start:hover{
-    background-color: green;
+#start{
+    background-color: rgb(255, 71, 71);
     color: white;
 }
-
+#start:hover{
+    transform: scale(1.1);
+}
+#pause:hover, #stop:hover{
+    transform: scale(1.1);
+    border-radius: 50px;
+background: linear-gradient(145deg, #2b2b2b, #333333);
+box-shadow:  20px 20px 60px #292929,
+             -20px -20px 60px #373737;
+}
 i{
     font-size: 30pt;
 }
@@ -51,4 +62,9 @@ i{
     background-color: rgba(255, 255, 0, 0);
     text-align: center;
     width: 100%;
+}
+#pTest{
+    font-size: 15pt;
+    color: red;
+    display: fixed;
 }
