@@ -83,8 +83,6 @@ btnSteps.addEventListener('click', function(){
 });
 
 btnStart.addEventListener('click', function(){
-
-
     createTime();
     btnStart.disabled = true;
     btnPause.disabled = false;
@@ -98,7 +96,7 @@ btnPause.addEventListener('click', function(){
 
     clearInterval(timer);
     btnStart.disabled = false;
-    btnSteps.disabled = true;
+    btnSteps.disabled = false;
     btnStart.style.backgroundColor = "rgb(255, 71, 71)";
     counter.style.color = "rgb(255, 71, 71)";
     counter.style.transition = "0.5s";
@@ -111,7 +109,7 @@ btnStop.addEventListener('click', function(){
     counter.innerHTML = "00:00:00";
     btnStart.disabled = false;
     btnPause.disabled = true;
-    btnSteps.disabled = true;
+    btnSteps.disabled = false;
     btnStart.style.backgroundColor = "rgb(255, 71, 71)";
     counter.style.color = "white";
     counter.style.transform = "Scale(1)";
