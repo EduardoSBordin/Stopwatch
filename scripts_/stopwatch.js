@@ -18,6 +18,7 @@ let clickTet = 0;
 
 btnPause.disabled = true;
 
+
 btnDeleteAll.onclick = () =>{
 
     document.location.reload();
@@ -83,7 +84,7 @@ btnSteps.addEventListener('click', function(){
 
 btnStart.addEventListener('click', function(){
 
-    
+
     createTime();
     btnStart.disabled = true;
     btnPause.disabled = false;
