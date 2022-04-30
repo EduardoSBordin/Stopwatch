@@ -56,9 +56,10 @@ btnSteps.addEventListener('click', function(){
 
     console.log(clickTet);
 
-    if(clickTet >= 5){
+    if(clickTet === 5){
         btnSteps.disabled = true;
-        clickTet = 5;
+    }else if(clickTet < 5) {
+        btnSteps.disabled = false;
     }
 
     let addP1 = document.createElement('p');
@@ -77,7 +78,7 @@ btnSteps.addEventListener('click', function(){
         addP1.remove();
         btn.remove();
         btnSteps.disabled = false;
-        clickTet-= 1;
+        clickTet--;
     };
 
 });
@@ -87,7 +88,6 @@ btnStart.addEventListener('click', function(){
     btnStart.disabled = true;
     btnPause.disabled = false;
     btnStart.style.backgroundColor = "rgb(203, 107, 107)";
-
     counter.style.color = "white";
     counter.style.transform = "Scale(1)";
 });
@@ -96,7 +96,7 @@ btnPause.addEventListener('click', function(){
 
     clearInterval(timer);
     btnStart.disabled = false;
-    btnSteps.disabled = false;
+    btnSteps.disabled = true;
     btnStart.style.backgroundColor = "rgb(255, 71, 71)";
     counter.style.color = "rgb(255, 71, 71)";
     counter.style.transition = "0.5s";
@@ -109,7 +109,7 @@ btnStop.addEventListener('click', function(){
     counter.innerHTML = "00:00:00";
     btnStart.disabled = false;
     btnPause.disabled = true;
-    btnSteps.disabled = false;
+    btnSteps.disabled = true;
     btnStart.style.backgroundColor = "rgb(255, 71, 71)";
     counter.style.color = "white";
     counter.style.transform = "Scale(1)";
